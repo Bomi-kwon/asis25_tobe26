@@ -8,30 +8,40 @@ const pathData = [
     id: 'thought-1',
     // 왼쪽 상단 영역 (일)
     path: 'M 120 80 Q 140 60 175 65 Q 210 70 220 100 Q 225 130 200 145 Q 170 160 140 145 Q 110 125 120 80',
+    centerX: 168,
+    centerY: 110,
     floatDelay: 0,
   },
   {
     id: 'thought-2',
     // 오른쪽 상단 영역 (사람)
     path: 'M 250 55 Q 285 45 320 55 Q 355 70 360 105 Q 360 140 330 155 Q 295 165 260 150 Q 230 130 250 55',
+    centerX: 305,
+    centerY: 105,
     floatDelay: 0.5,
   },
   {
     id: 'thought-3',
     // 중앙 영역 (성장)
     path: 'M 170 170 Q 200 155 240 160 Q 280 165 295 195 Q 305 230 280 255 Q 245 275 205 265 Q 165 250 160 210 Q 155 180 170 170',
+    centerX: 230,
+    centerY: 215,
     floatDelay: 1,
   },
   {
     id: 'thought-4',
     // 오른쪽 중단 영역 (취미)
     path: 'M 320 170 Q 355 160 385 180 Q 410 205 405 240 Q 395 275 360 285 Q 320 290 300 260 Q 285 225 320 170',
+    centerX: 355,
+    centerY: 225,
     floatDelay: 1.5,
   },
   {
     id: 'thought-5',
     // 하단 중앙 영역 (감정)
     path: 'M 220 290 Q 260 275 300 285 Q 340 300 345 340 Q 345 380 305 395 Q 260 405 225 385 Q 195 360 200 320 Q 205 295 220 290',
+    centerX: 275,
+    centerY: 340,
     floatDelay: 2,
   },
 ];
@@ -106,6 +116,8 @@ const HeadSilhouette = ({ onThoughtClick }) => {
           color={thought.color}
           label={thought.label}
           floatDelay={thought.floatDelay}
+          centerX={thought.centerX}
+          centerY={thought.centerY}
           onClick={() => onThoughtClick(thought)}
         />
       ))}

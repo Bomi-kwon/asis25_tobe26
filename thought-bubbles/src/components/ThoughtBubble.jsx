@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const ThoughtBubble = ({ path, id, color, label, floatDelay = 0, onClick }) => {
+const ThoughtBubble = ({ path, id, color, label, floatDelay = 0, onClick, centerX, centerY }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const floatingAnimation = {
@@ -31,14 +31,15 @@ const ThoughtBubble = ({ path, id, color, label, floatDelay = 0, onClick }) => {
     >
       <motion.path
         d={path}
-        fill={isHovered ? color : 'transparent'}
+        fill={color}
         stroke={color}
-        strokeWidth={isHovered ? 3 : 2}
+        strokeWidth={isHovered ? 3 : 1.5}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{
           opacity: 1,
           scale: isHovered ? 1.02 : 1,
-          fillOpacity: isHovered ? 0.3 : 0,
+          fillOpacity: isHovered ? 0.4 : 0.15,
+          strokeOpacity: isHovered ? 1 : 0.6,
         }}
         transition={{
           duration: 0.3,
@@ -48,21 +49,27 @@ const ThoughtBubble = ({ path, id, color, label, floatDelay = 0, onClick }) => {
           filter: isHovered ? `drop-shadow(0 0 10px ${color})` : 'none',
         }}
       />
-      {isHovered && (
-        <motion.text
-          x="50%"
-          y="50%"
-          textAnchor="middle"
-          fill={color}
-          fontSize="14"
-          fontWeight="bold"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          style={{ pointerEvents: 'none' }}
-        >
-          {label}
-        </motion.text>
-      )}
+      <motion.text
+        x={centerX}
+        y={centerY}
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="#ffffff"
+        fontSize="18"
+        fontWeight="600"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          scale: isHovered ? 1.1 : 1,
+        }}
+        transition={{ duration: 0.3 }}
+        style={{
+          pointerEvents: 'none',
+          textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+        }}
+      >
+        {label}
+      </motion.text>
     </motion.g>
   );
 };
