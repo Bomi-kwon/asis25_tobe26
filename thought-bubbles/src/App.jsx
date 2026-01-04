@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1>마음속 생각들</h1>
+        <h1>인사이드 보미</h1>
         <p className="subtitle">각 영역을 클릭해보세요</p>
       </header>
 
@@ -30,7 +30,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>25와 26 사이</p>
+        <p>25년과 26년</p>
       </footer>
 
       <ThoughtDialog
