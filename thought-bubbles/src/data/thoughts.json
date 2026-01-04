@@ -2,53 +2,53 @@
   "thoughts": [
     {
       "id": "thought-1",
-      "label": "일",
+      "label": "불안",
       "color": "#FF6B6B",
       "year2025": {
-        "title": "2025년 일",
-        "image": "/images/work-2025.jpg",
-        "text": "여기에 2025년 일에 대한 내용을 작성하세요."
+        "title": "2025년 불안",
+        "image": "/images/growth-2025.jpg",
+        "text": "여기에 2025년 불안에 대한 내용을 작성하세요."
       },
       "year2026": {
-        "title": "2026년 일",
+        "title": "2026년 불안",
         "image": "/images/work-2026.jpg",
-        "text": "여기에 2026년 일에 대한 내용을 작성하세요."
+        "text": "여기에 2026년 불안에 대한 내용을 작성하세요."
       }
     },
     {
       "id": "thought-2",
-      "label": "사람",
+      "label": "관계",
       "color": "#4ECDC4",
       "year2025": {
-        "title": "2025년 사람",
+        "title": "2025년 관계",
         "image": "/images/people-2025.jpg",
-        "text": "여기에 2025년 사람에 대한 내용을 작성하세요."
+        "text": "여기에 2025년 관계에 대한 내용을 작성하세요."
       },
       "year2026": {
-        "title": "2026년 사람",
+        "title": "2026년 관계",
         "image": "/images/people-2026.jpg",
-        "text": "여기에 2026년 사람에 대한 내용을 작성하세요."
+        "text": "여기에 2026년 관계에 대한 내용을 작성하세요."
       }
     },
     {
       "id": "thought-3",
-      "label": "성장",
+      "label": "커리어",
       "color": "#FFE66D",
       "year2025": {
-        "title": "2025년 성장",
+        "title": "2025년 커리어",
         "image": "/images/growth-2025.jpg",
-        "text": "여기에 2025년 성장에 대한 내용을 작성하세요."
+        "text": "여기에 2025년 커리어에 대한 내용을 작성하세요."
       },
       "year2026": {
-        "title": "2026년 성장",
+        "title": "2026년 커리어",
         "image": "/images/growth-2026.jpg",
-        "text": "여기에 2026년 성장에 대한 내용을 작성하세요."
+        "text": "여기에 2026년 커리어에 대한 내용을 작성하세요."
       }
     },
     {
       "id": "thought-4",
       "label": "취미",
-      "color": "#95E1D3",
+      "color": "#FF9F43",
       "year2025": {
         "title": "2025년 취미",
         "image": "/images/hobby-2025.jpg",
@@ -62,17 +62,17 @@
     },
     {
       "id": "thought-5",
-      "label": "감정",
+      "label": "건강",
       "color": "#DDA0DD",
       "year2025": {
-        "title": "2025년 감정",
+        "title": "2025년 건강",
         "image": "/images/emotion-2025.jpg",
-        "text": "여기에 2025년 감정에 대한 내용을 작성하세요."
+        "text": "여기에 2025년 건강에 대한 내용을 작성하세요."
       },
       "year2026": {
-        "title": "2026년 감정",
+        "title": "2026년 건강",
         "image": "/images/emotion-2026.jpg",
-        "text": "여기에 2026년 감정에 대한 내용을 작성하세요."
+        "text": "여기에 2026년 건강에 대한 내용을 작성하세요."
       }
     }
   ]
